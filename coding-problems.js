@@ -5,7 +5,15 @@
 /////
 //#1
 //Write a function called `sumArray` that takes in an array (that could contain any type of data) and returns a sum of the numbers in the array.
-const sumArray = () => null;
+const sumArray = (arr) => {
+  let sum = 0
+  arr.each( el => {
+    if (typeof el === 'number') {
+      sum += el
+    }
+  })
+  return sum
+}
 
 /////
 //#2
